@@ -1,0 +1,21 @@
+{
+  "name": "nutapp",
+  "version": "1.0.0",
+  "description": "",
+"type": "module",
+  "main": "app.js",
+  "dependencies": {
+    "fastify": "^4.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-private:cbg44/NutApp.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
