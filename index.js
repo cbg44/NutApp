@@ -1,13 +1,8 @@
 // ESM
-import Fastify from 'fastify'
-const fastify = Fastify({
-  logger: true
-})
+const fastify = require('fastify')({logger:true})
+const route = require('./routes')
 
-// Declare a route
-fastify.get('/', function (request, reply) {
-  reply.send({ hello: 'world' })
-})
+fastify.register(route)
 
 // Run the server!
 fastify.listen({ port: 3010 }, function (err, address) {
